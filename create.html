@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Create Your Portfolio</h2>
+
+  <!-- Profile Image -->
+  <label>Profile Picture</label>
+  <input type="file" id="profileImage" accept="image/*">
+
+  <!-- Basic Info -->
+  <input type="text" id="fullName" placeholder="Full Name">
+  <input type="text" id="title" placeholder="Professional Title">
+  <textarea id="bio" placeholder="Short Bio"></textarea>
+
+  <!-- Skills -->
+  <input type="text" id="skills" placeholder="Skills (comma separated)">
+
+  <!-- Experience -->
+    <h4>Experience</h4>
+    <div id="experience-wrapper"></div>
+    <button type="button" onclick="addExperience()">Add Experience</button>
+
+
+
+  <!-- Projects -->
+  <h4>Projects</h4>
+  <div id="projects-wrapper"></div>
+  <button type="button" onclick="addProject()">Add Project</button>
+
+  <!-- Contact -->
+  <h4>Contact</h4>
+  <input type="email" id="email" placeholder="Email">
+  <input type="text" id="instagram" placeholder="Instagram Link">
+  <input type="text" id="github" placeholder="GitHub Link">
+  <input type="text" id="linkedin" placeholder="LinkedIn Link">
+
+  <!-- Generate Portfolio -->
+  <button type="button" onclick="savePortfolio()">Generate Portfolio</button>
+
+</div>
+
+
+<script src="create.js"></script>
+</body>
+</html>

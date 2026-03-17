@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-card">
+
+    <!-- User Info -->
+    <div class="dashboard-header">
+      <img id="dash-image" src="assets/images/default-avatar.png" alt="Profile">
+      <div>
+        <h2 id="signupFullName"></h2>
+        <p id="signupEmail"></p>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="dashboard-actions">
+      <a href="create.html">
+        <button>Create Portfolio</button>
+      </a>
+
+      <a href="portfolio-list.html">
+        <button>View Portfolio</button>
+        </a>
+
+      <a href="settings.html">
+        <button class="secondary-btn">Settings</button>
+      </a>
+
+      <button class="danger-btn" onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

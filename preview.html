@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Preview</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+
+  <body>
+
+  <div class="portfolio-card">
+
+    <!-- Header -->
+    <div class="profile-header">
+      <img id="p-image" src="assets/images/default-avatar.png" alt="Profile" width="15" height="15">
+      <div>
+        <h1 id="p-name"></h1>
+        <h3 id="p-title"></h3>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about">
+      <h4>About Me</h4>
+      <p id="p-bio"></p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills">
+      <h4>Skills</h4>
+      <div id="skills-container"></div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience">
+        <h4>Experience</h4>
+        <div id="experience-container"></div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects">
+        <h4>Projects</h4>
+        <div id="projects-container"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact">
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-envelope"></i> Email:</p>
+        <p><i class="fa-brands fa-github"></i> GitHub: </p>
+        <p><i class="fa-brands fa-instagram"></i> Instagram: </p>
+        <p><i class="fa-brands fa-linkedin"></i> LinkedIn: </p>
+
+    </section>
+
+    <a href="dashboard.html">
+      <button class="back-btn">Back to Dashboard</button>
+    </a>
+<div class="portfolio-actions">
+  <button id="editPortfolioBtn">Edit Portfolio</button>
+  <button id="deletePortfolioBtn" class="danger-btn">Delete Portfolio</button>
+</div>
+<div class="share-container">
+  <button id="shareBtn">Share Portfolio</button>
+
+  <div id="shareOptions" class="share-options hidden">
+    <button id="shareLinkBtn">Share as Link</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+
+  </div>
+</div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="preview.js"></script>
+</body>
+
+</body>
+</html>
